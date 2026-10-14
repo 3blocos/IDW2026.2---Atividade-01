@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Conheça uma proposta de orquestração com agentes de tráfego, identidade e contexto.">
+        <title>Agentes: dividir o trabalho sem perder o controle | CyberOps Lab</title>
+    </head>
+    <body>
+        <header>
+            <p><strong>CyberOps Lab</strong></p>
+            <p>Redes, agentes e segurança na era da IA.</p>
+            <nav aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="soc-noc.html">SOC e NOC</a></li>
+                    <li><a href="agentes.html" aria-current="page">Agentes</a></li>
+                    <li><a href="ameacas.html">Ameaças</a></li>
+                    <li><a href="engenharia-reversa.html">Engenharia reversa</a></li>
+                    <li><a href="laboratorio.html">Laboratório</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Agentes: dividir o trabalho sem perder o controle</h1>
+            <section>
+                <h2>O que muda em relação a um chat?</h2>
+                <p>Em um chat, alguém faz uma pergunta e recebe uma resposta. Um agente também pode consultar ferramentas, acompanhar resultados e continuar uma tarefa. O grau de autonomia depende das permissões e das regras do sistema.</p>
+                <p>Orquestrar é organizar esse trabalho: decidir qual tarefa vai para cada agente, quais dados ele recebe e quando a investigação deve parar ou passar para uma pessoa.</p>
+            </section>
+            <section>
+                <h2>Uma equipe pequena para um alerta</h2>
+                <p>No exemplo deste site, o coordenador recebe um alerta e divide a investigação entre três agentes especializados.</p>
+                <ul>
+                    <li><strong>Agente de tráfego:</strong> compara destinos, horários e volume de conexões.</li>
+                    <li><strong>Agente de identidade:</strong> verifica acessos e mudanças nas contas relacionadas.</li>
+                    <li><strong>Agente de contexto:</strong> consulta inventário, manutenção e tarefas agendadas.</li>
+                </ul>
+                <p>Esses agentes podem ser chamados de subagentes quando trabalham sob a coordenação de outro agente. Separar tarefas ajuda na organização, mas não garante que as conclusões estejam certas.</p>
+                <ol>
+                    <li>O coordenador identifica a máquina e o período do alerta.</li>
+                    <li>Cada agente consulta somente os dados necessários para sua tarefa.</li>
+                    <li>O coordenador reúne as respostas e aponta onde há concordância ou dúvida.</li>
+                    <li>O analista confere as evidências e decide o próximo passo.</li>
+                </ol>
+            </section>
+            <section>
+                <h2>Onde a autonomia precisa de limite</h2>
+                <article>
+                    <h3>Consultar é diferente de bloquear</h3>
+                    <p>Resumir registros pode ajudar bastante. Bloquear uma conta ou isolar um servidor tem outro impacto: uma decisão errada pode interromper o trabalho de várias pessoas. Neste exemplo, os agentes sugerem ações e o analista aprova as mudanças.</p>
+                </article>
+                <article>
+                    <h3>O próprio registro pode tentar enganar o agente</h3>
+                    <p>Uma página ou um log pode conter uma frase escrita para manipular a análise. Isso é um risco de <em>prompt injection</em>. O conteúdo investigado deve ser tratado como dado, mesmo quando parece uma instrução.</p>
+                    <p>Por exemplo, uma mensagem em um log dizendo “ignore os outros alertas” não tem autoridade para mudar as regras da investigação.</p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>CyberOps Lab — Introdução ao Desenvolvimento Web — Avaliação 01.</p>
+            <p>Atualizado em <time datetime="2026-10-13">13 de outubro de 2026</time>.</p>
+        </footer>
+    </body>
+</html>
