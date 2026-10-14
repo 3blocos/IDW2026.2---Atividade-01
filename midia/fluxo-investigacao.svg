@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" role="img" aria-labelledby="titulo descricao">
+<title id="titulo">Uma investigação com agentes</title><desc id="descricao">Registros chegam ao coordenador, passam pelos agentes de tráfego, identidade e contexto e são revisados pelo analista.</desc>
+<rect width="760" height="420" fill="#eef3f7"/>
+<defs><marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#254558"/></marker></defs>
+<g fill="none" stroke="#254558" stroke-width="3" marker-end="url(#seta)">
+<path d="M380 65 V105"/><path d="M380 165 V185 H140 V210"/><path d="M380 165 V210"/><path d="M380 165 V185 H620 V210"/>
+<path d="M140 270 V300 H380 V330"/><path d="M380 270 V330"/><path d="M620 270 V300 H380 V330"/>
+</g>
+<g fill="#ffffff" stroke="#254558" stroke-width="2">
+<rect x="270" y="15" width="220" height="50" rx="8"/><rect x="270" y="105" width="220" height="60" rx="8"/>
+<rect x="40" y="210" width="200" height="60" rx="8"/><rect x="280" y="210" width="200" height="60" rx="8"/><rect x="520" y="210" width="200" height="60" rx="8"/>
+<rect x="240" y="330" width="280" height="65" rx="8"/>
+</g>
+<g fill="#17384b" font-family="Arial, sans-serif" font-size="19" text-anchor="middle">
+<text x="380" y="47">Registros da rede</text><text x="380" y="143">Coordenador</text>
+<text x="140" y="247">Agente de tráfego</text><text x="380" y="247">Agente de identidade</text><text x="620" y="247">Agente de contexto</text>
+<text x="380" y="358">Analista revisa</text><text x="380" y="383">as evidências e decide</text>
+</g></svg>
